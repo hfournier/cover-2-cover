@@ -1,0 +1,42 @@
+items:
+  - ticketUrl: https://www.thewinefestivals.com/events/view_event/1985/11284
+    price: $109.00
+    endDate: 2021-10-10T05:00:36.416Z
+    venue: Rotary Centre for the Arts
+    startDate: 2021-10-10T03:00:47.259Z
+    publish: true
+    photo: /static/img/events/2021-owfs-vfwt-2160x1080-rev-002-.jpg
+    eventLink: https://www.thewinefestivals.com/events/view_event/1985/11284
+    location: '{"type":"Point","coordinates":[-119.4951904,49.8915587]}'
+    title: Valley First Wine Festival
+    description: "The most anticipated wine event of the Fall season held at the
+      Rotary Centre for the Arts in Kelowna.\r
+
+      Cover2Cover will take the stage and rock the room!\r
+
+      Come enjoy amazing wine and bring your dancing shoes! Tickets are
+      $109 and include unlimited wine and food."
+  - price: $10
+    endDate: 2021-09-18T03:00:21.722Z
+    venue: Forbidden Spirits Distilling Co, 4400 Wallace Hill Rd, Kelowna, BC
+    startDate: 2021-09-18T01:00:21.697Z
+    publish: true
+    photo: /static/img/events/exterior-pro-1.jpg
+    eventLink: https://forbiddenspirits.ca/
+    location: '{"type":"Point","coordinates":[-119.4326305,49.82311]}'
+    title: Forbidden Spirits
+    description: |-
+      **Cover2Cover** plays at **Forbidden Spirits Distilling Co**
+      Located only 15 minutes from downtown Kelowna, BC
+  - price: $10
+    endDate: 2021-08-14T03:00:21.722Z
+    venue: Forbidden Spirits Distilling Co, 4400 Wallace Hill Rd, Kelowna, BC
+    startDate: 2021-08-14T01:00:21.697Z
+    publish: true
+    photo: /static/img/events/exterior-pro-1.jpg
+    eventLink: https://forbiddenspirits.ca/
+    location: '{"type":"Point","coordinates":[-119.4326305,49.82311]}'
+    title: Forbidden Spirits
+    description: |-
+      **Cover2Cover** plays at **Forbidden Spirits Distilling Co**
+      Located only 15 minutes from downtown Kelowna, BC

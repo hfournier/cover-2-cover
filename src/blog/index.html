@@ -1,0 +1,50 @@
+---
+layout: blog
+---
+
+<ul class="mt-4">
+  {% set postslist = collections.post %} {% for post in postslist | reverse %}
+  {% if post.data.publish %}
+  <li class="py-4 sm:border-b-2 sm:border-neutral-300 sm:py-5 lg:py-6">
+    <article
+      class="sm:grid sm:grid-cols-12 sm:grid-rows-fr-auto sm:gap-x-6 sm:gap-y-4 lg:grid-rows-auto-fr lg:gap-x-8"
+    >
+      {% if post.data.photo %}
+      <div class="sm:aspect-ratio-3-2 sm:col-span-4 lg:row-span-2">
+        <img
+          class="h-full w-full rounded-lg object-cover shadow-md"
+          src="{{ post.data.photo }}"
+          alt=""
+        />
+      </div>
+      {% else %}
+      <div class="sm:col-span-4">&nbsp;</div>
+      {% endif %}
+      <div class="sm:col-span-8">
+        <h2 class="c2c-link mt-4 mb-2 text-xl font-bold sm:mt-0 md:text-2xl">
+          <a href="{{ post.url | url }}">
+            {% if post.data.title %} {{ post.data.title }} {% else %} Untitled
+            {% endif %}
+          </a>
+        </h2>
+        <p class="mb-4 text-sm leading-6 text-neutral-500 sm:mb-0">
+          <time datetime="{{ post.data.date | isoDate }}">
+            {{ post.date | readableDate }} by {{ post.data.author }}
+          </time>
+        </p>
+      </div>
+      <div class="sm:col-span-full sm:row-start-2 lg:col-span-8 lg:col-start-5">
+        {% if post.data.description %}
+        <p class="prose !max-w-full text-lg">{{ post.data.description }}</p>
+        {% endif %}
+
+        <p class="mt-4">
+          <a href="{{ post.url | url }}" class="c2c-link font-bold">
+            Read more →
+          </a>
+        </p>
+      </div>
+    </article>
+  </li>
+  {% endif %} {% endfor %}
+</ul>

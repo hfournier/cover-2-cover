@@ -1,0 +1,20 @@
+---
+items:
+  - text: Music
+    url: "/music"
+    path: music
+  - text: Events
+    url: "/events"
+    path: events
+  - text: About
+    url: "/about"
+    path: about
+  - text: Blog
+    url: "/blog"
+    path: blog
+  - text: Gallery
+    url: "/gallery"
+    path: gallery
+  - text: Contact
+    url: "/contact"
+    path: contact

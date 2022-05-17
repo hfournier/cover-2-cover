@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "./partials/head.html" %}
+  <body
+    class="lg:bg-album-covers h-screen bg-neutral-800 lg:bg-neutral-600 lg:bg-auto lg:bg-repeat lg:py-2 lg:bg-blend-multiply"
+  >
+    {% include "./partials/navbar.html" %} {{ content | safe }} {% include
+    "./partials/footer.html" %} {% if path == "home" %}
+    <!-- Needed only if you are using Netlify Identity feature -->
+    <!-- <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script> -->
+    {% endif %}
+  </body>
+</html>

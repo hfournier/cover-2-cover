@@ -1,0 +1,138 @@
+---
+layout: default
+title: About Cover2Cover | Classic Rock Band | Dance Band | Kelowna, BC
+description: With five professional career musicians who all sing and harmonize, we can create a perfect night of music for any party, event or fundraiser
+path: about
+---
+
+<main class="mx-auto max-w-5xl bg-neutral-50">
+  <div class="bg-neutral-800">
+    <div
+      class="border-t-4 border-b-4 border-l-[16px] border-r-[16px] border-neutral-800 bg-neutral-50 bg-cloth-texture bg-repeat p-4 sm:p-8 lg:p-12"
+    >
+      <section class="c2c-panel prose !max-w-full">
+        <h1>About Cover2Cover</h1>
+        <p>
+          Live music makes every event better! Cover2Cover - Kelowna's classic
+          rock dance band was formed in 2010 and is the brain child of guitarist
+          Jim Rhindress who wanted to create a rock band with the very best
+          players Kelowna has to offer. He wanted a fun classic rock dance band
+          that would not only have the highest level of musicianship but to
+          create a project with great friends who truly enjoy each other's
+          company. You can really feel the energy when these good friends get
+          together to make great music! They take turns fronting the songs,
+          harmonizing and have a ton of fun doing it!
+        </p>
+        <p>
+          Cover2Cover specializes in songs from the 60s, 70s, 80s and 90s
+          through today with new material being added all the time. We can also
+          perform as a 3-piece or duo depending on the needs of the event.
+        </p>
+        <p>
+          Our sound system is state of the art and we can provide full stage
+          lighting if needed. We are available for fundraisers, corporate
+          events, private parties and weddings.
+        </p>
+        <p>
+          Cover2Cover has provided classic rock dance music for such large and
+          prestigious events as the Canadian Culinary Championships three years
+          in a row since 2012, sharing the stage with Canadian rock royalty
+          Barney Bentall, Ed Robertson of the Bare Naked Ladies and Allen Doyle
+          of Great Big Sea, Westjet WineFest, Ribfest and Earth Wind & Fire.
+        </p>
+        <p>
+          You may also have seen us performing classic rock and dance sets for
+          Festivals Kelowna, Westside Daze, private parties and corporate
+          events.
+        </p>
+      </section>
+      <section class="mt-4 w-full sm:mt-12 sm:pb-4">
+        <div class="sm:grid sm:grid-cols-2 sm:items-start sm:gap-10 lg:gap-12">
+          {% for item in bios.items %} {% if item.publish %}
+          <div
+            class="c2c-panel !mt-8 grid auto-rows-min grid-cols-12 place-items-start gap-4 sm:!mt-0"
+          >
+            <img
+              class="col-span-full m-0 justify-self-center rounded-lg object-cover object-center p-0 shadow-md sm:col-span-5 sm:justify-self-start"
+              src="{{ item.photo }}"
+              alt="Photo of {{ item.name }}"
+            />
+            <div
+              class="col-span-full justify-self-center sm:col-span-7 sm:justify-self-start"
+            >
+              <div class="text-3xl font-bold sm:text-xl lg:text-3xl">
+                {{ item.name }}
+              </div>
+              <div
+                class="text-center text-xl font-bold sm:text-left sm:text-lg lg:text-xl"
+              >
+                {{ item.talent }}
+              </div>
+            </div>
+            <div class="col-span-full">{{ item.description }}</div>
+          </div>
+          {% endif %} {% endfor %}
+        </div>
+      </section>
+      <section class="c2c-panel prose !max-w-full">
+        <h2>Related to Cover2Cover</h2>
+        <p>
+          Some of our band members are involved in other projects, which you may
+          be interested in as well.
+        </p>
+        <h3 id="jrguitar">JR Guitar</h3>
+        <p>
+          <a
+            class="c2c-link"
+            href="https://www.jimrhindress.com/"
+            target="jrguitar"
+            >JR Guitar</a
+          >
+          is the instrument repair shop of choice for many professional
+          musicians in Kelowna, as well as other guitar stores, pawn shops and
+          music schools in town.
+        </p>
+        <h3 id="smitten">Smitten!</h3>
+        <p>
+          <a
+            class="c2c-link"
+            href="https://www.smittenkelowna.com/"
+            target="smitten"
+            >Smitten!</a
+          >
+          is an acoustic and dance music duo I have formed with my wife, Kim
+          Foreman-Rhindress.
+        </p>
+        <p>
+          We sing a wide variety of acoustic and rock songs. Our repertoire is
+          perfect for any weddings, wineries, corporate functions, or private
+          parties. I play electric guitar, Kim plays keys, and we use backing
+          tracks for the bass and drums. We guarantee you a great night of dance
+          music, classic rock, and 80s & 90s pop songs.
+        </p>
+        <p>
+          For special occasions like birthdays, anniversaries, or weddings, we
+          can write customs songs. And, we can even deliver a singing telegram.
+        </p>
+
+        <h3>Kelowna Voice Lab</h3>
+        <p>
+          Kelowna Voice Lab provides voice coaching and lessons. Kim can help
+          with vocal fatigue and give you great techniques to help protect and
+          improve your voice.
+        </p>
+        <p>
+          Give Kim Foreman-Rhindress a call at
+          <a class="c2c-link" href="tel:+12508788724">250.878.8724</a>
+          or visit
+          <a
+            class="c2c-link"
+            href="https://www.kelownavoicelab.com/"
+            target="kelownavoicelab"
+            >Kelowna Voice Lab</a
+          >.
+        </p>
+      </section>
+    </div>
+  </div>
+</main>

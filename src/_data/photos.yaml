@@ -1,0 +1,16 @@
+items:
+  - caption: Jim Rhindress
+    photo: /static/img/bios/jim-rhindress.jpg
+    publish: true
+  - caption: Robert Vallee
+    photo: /static/img/bios/robert-vallee.jpg
+    publish: true
+  - caption: Kim Rhindress
+    photo: /static/img/bios/kim-rhindress.jpg
+    publish: true
+  - caption: Mike Mueller
+    photo: /static/img/bios/mike-mueller.jpg
+    publish: true
+  - caption: Cyril Schermann
+    photo: /static/img/bios/cyril-schermann.jpg
+    publish: true

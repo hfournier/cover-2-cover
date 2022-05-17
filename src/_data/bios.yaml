@@ -1,0 +1,59 @@
+items:
+  - name: Jim Rhindress
+    talent: Guitar / Vocals
+    description:
+      Jim began playing professionally at the age of 15 in northern BC.
+      Over the years, he has worked with a wide variety of projects in Vancouver
+      and is a much sought after studio musician; recording in both in Vancouver
+      and Kelowna. Locally, Jim has fronted “The Grateful Dads” and “Too Good
+      for Radio” as well as playing with many other successful bands and
+      recording artists. Jim is also currently writing songs and performing in
+      the acoustic duos Smitten! and Rhindress with his wife Kim.
+    photo: /static/img/bios/jim-rhindress.jpg
+    publish: true
+  - name: Robert Vallee
+    talent: Drums / Vocals
+    description:
+      "Robert started playing in Alberta as a teenager and although they
+      may have been tormented, his parents were always very supportive.
+      Cutting his teeth in the Alberta scene as an underage drummer was
+      never a problem,  he had the best fake ID possible! In 1998 family ties, a
+      willing wife, and a desire to live in paradise finally brought him to the
+      Okanagan. Since then he has played in numerous bands and has gotten to
+      know a lot of great musicians. He is excited to add his lead and harmony
+      vocals as well as holding the groove."
+    photo: /static/img/bios/robert-vallee.jpg
+    publish: true
+  - name: Kim Rhindress
+    talent: Keys / Vocals
+    description:
+      Kim is from Ontario and started singing and playing the piano when
+      she was 5.  She is well known in Kelowna for her theatre work and loves
+      writing songs and performing with Jim in their duo where they play a
+      variety of songs and styles for weddings, events and parties. She is
+      excited to add her voice and keys to these great classic rock tunes!
+    photo: /static/img/bios/kim-rhindress.jpg
+    publish: true
+  - name: Mike Mueller
+    talent: Guitar / Vocals
+    description:
+      Mike hails from Medicine Hat and has been a professional musician
+      for more than 35 years; rockin' the Okanagan music scene for the last 10
+      years.  He is well versed in many styles of music but prefers guitar
+      driven classic rock.  As one of the founding members of Cover2Cover, he
+      loves the diversity and energy of this group.
+    photo: /static/img/bios/mike-mueller.jpg
+    publish: true
+  - name: Cyril Schermann
+    talent: Bass
+    description:
+      Cyril is a career musician from Kelowna who has been playing bass
+      since he was a teenager. Country fans will recognize him as a 2020 nominee
+      for bassist of the year at the BCCMA. He has played on stages in France
+      England and on many country festival stages in Canada. He has opened for
+      Carrie Underwood, Brett Kissel, Toby Keith among others and brings a
+      wealth of real musical intelligence to our project. We are delighted to
+      play with him as aside from his abilities and pedigree, he is a treasured
+      friend.
+    photo: /static/img/bios/cyril-schermann.jpg
+    publish: true

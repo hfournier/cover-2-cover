@@ -1,0 +1,148 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: master
+  ### enable below lines for github integration ###
+  # name: github
+  # repo: hfournier/cover-2-cover
+media_folder: "src/static/img"
+public_folder: "/static/img"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+  - label: "Blog"
+    name: "blog"
+    folder: "src/posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Photo",
+          name: "photo",
+          widget: "image",
+          required: false,
+          media_folder: "/{{media_folder}}/blog",
+          public_folder: "{{public_folder}}/blog",
+        }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Publish", name: "publish", widget: "boolean" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        options: ["concert", "dance", "jam", "recording"]
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "items"
+        file: "src/_data/navigation.yaml"
+        fields:
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: false
+            collapsed: true
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+      - label: "Meta Settings"
+        name: "settings"
+        file: "src/_data/settings.yaml"
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Author, name: author, widget: string }
+          - { label: URL, name: url, widget: string }
+      - label: "Events"
+        name: "events"
+        file: "src/_data/events.yaml"
+        fields:
+          - label: Events
+            name: items
+            widget: list
+            collapsed: false
+            label_singular: Event
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - {
+                  label: Photo,
+                  name: photo,
+                  widget: image,
+                  required: false,
+                  media_folder: "/{{media_folder}}/events",
+                  public_folder: "{{public_folder}}/events",
+                }
+              - { label: Start Date & Time, name: startDate, widget: datetime }
+              - { label: End Date & Time, name: endDate, widget: datetime }
+              - {
+                  label: Event Link,
+                  name: eventLink,
+                  widget: string,
+                  required: false,
+                }
+              - { label: Venue, name: venue, widget: string }
+              - {
+                  label: Location,
+                  name: location,
+                  widget: map,
+                  required: false,
+                }
+              - { label: Ticket Price(s), name: price, widget: string }
+              - {
+                  label: Ticket Link,
+                  name: ticketUrl,
+                  widget: string,
+                  required: false,
+                }
+              - { label: "Publish", name: "publish", widget: "boolean" }
+      - label: "Bios"
+        name: "bios"
+        file: "src/_data/bios.yaml"
+        fields:
+          - label: Bios
+            name: items
+            widget: list
+            collapsed: false
+            label_singular: Bio
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Talent, name: talent, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - {
+                  label: Photo,
+                  name: photo,
+                  widget: image,
+                  required: false,
+                  media_folder: "/{{media_folder}}/bios",
+                  public_folder: "{{public_folder}}/bios",
+                }
+              - { label: "Publish", name: "publish", widget: "boolean" }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "src/_data/testimonials.yaml"
+        fields:
+          - label: Testimonials
+            name: items
+            widget: list
+            collapsed: true
+            label_singular: Testimonial
+            fields:
+              - { label: Comment, name: comment, widget: text }
+              - { label: Author, name: author, widget: string }
+              - { label: Date, name: date, widget: date, required: false }
+              - {
+                  label: Location,
+                  name: location,
+                  widget: string,
+                  required: false,
+                }

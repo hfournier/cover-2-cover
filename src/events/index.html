@@ -1,0 +1,66 @@
+---
+layout: default
+title: News | Classic Rock Dance Band | Cover2Cover | Kelowna, BC
+description: Want to know where we are playing next? Keep up to date with Kelowna's Classic Rock Dance Band news and calendar
+path: events
+---
+
+<main class="mx-auto max-w-5xl bg-neutral-50">
+  <div class="bg-neutral-800">
+    <div
+      class="border-t-4 border-b-4 border-l-[16px] border-r-[16px] border-neutral-800 bg-neutral-50 bg-cloth-texture bg-repeat p-4 sm:p-8 lg:p-12"
+    >
+      <section class="c2c-panel">
+        <div class="prose">
+          <h1>Events</h1>
+        </div>
+        <div class="mt-4">
+          {% for item in events.items %} {% if item.publish %}
+          <article
+            class="border-b-2 border-neutral-300 py-8 last:border-b-0 sm:grid sm:auto-rows-min sm:grid-cols-12 sm:gap-6"
+          >
+            <div
+              class="sm:aspect-ratio-3-2 mb-4 sm:col-span-3 sm:mb-0 md:col-span-4 lg:col-span-5"
+            >
+              <img
+                class="h-full w-full rounded-lg object-cover shadow-md"
+                src="{{ item.photo }}"
+                alt=""
+              />
+            </div>
+            <div
+              class="mb-4 flex flex-col sm:col-span-9 sm:mb-0 md:col-span-8 lg:col-span-7"
+            >
+              <h2 class="text-xl font-bold">
+                {% if item.eventLink %}<a
+                  class="c2c-link"
+                  href="{{ item.eventLink | url }}"
+                  >{{ item.title }}</a
+                >{% else %}{{ item.title }}{% endif %}
+              </h2>
+              <div>{{ item.venue }}</div>
+              <time class="font-bold" datetime="{{ item.startDate | isoDate }}"
+                >{% formatStartEnd item.startDate, item.endDate %}</time
+              >
+              <div>{{ item.price }}</div>
+              {% if item.ticketUrl %}
+              <div class="pt-2">
+                <a
+                  class="btn btn-small btn-orange"
+                  href="{{ item.ticketUrl }}"
+                  target="tickets"
+                  >Buy Tickets</a
+                >
+              </div>
+              {% endif %}
+            </div>
+            <div class="col-span-full">
+              {{ item.description | toHTML | safe }}
+            </div>
+          </article>
+          {% endif %} {% endfor %}
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
